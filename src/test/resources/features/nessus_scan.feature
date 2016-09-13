@@ -8,7 +8,7 @@ Feature: Nessus Scan
     And the scanning policy named bdd-policy
     And the target host names
       | localhost  |
-    When the scanner is run with scan name bddscan
+    When the scanner with scan name bddscan is run
     And the list of issues is stored
     And the following nessus false positive are removed
       |pluginId    |hostname          |
