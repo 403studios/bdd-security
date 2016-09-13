@@ -38,7 +38,7 @@ public class NessusScanningSteps {
     public void createNessusClient(int version, String url) {
         nessusUrl = url;
         nessusVersion = version;
-        scanClient = ClientFactory.createScanClient(url, nessusVersion, ignoreHostNamesInSSLCert);
+        scanClient = ClientFactory.createScanClient(nessusUrl, nessusVersion, ignoreHostNamesInSSLCert);
     }
 
     @Given("the nessus username (.*) and the password (.*)$")
